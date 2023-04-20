@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Output</title>
+</head>
+<body>
+    <script>
+        alert('Answer the question')     //Output
+        var name = prompt('What is your name: ')   //Input
+        alert('Your name is ' + name)
+
+        console.log('Your name is ' + name)
+        console.error('Your name is ' + name)
+        console.info('Your name is ' + name)
+        console.warn('Your name is ' + name)
+        console.timeEnd()
+
+        if (window.confirm("Do you really want to leave?")) {
+            window.open("exit.html", "Thanks for the answer!");
+        }
+
+    </script>
+</body>
+</html>
