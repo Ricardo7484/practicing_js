@@ -10,3 +10,5 @@ Repository made to remember and increasing knowledge in javascript.
 6) switch.html
 7) while.html
 8) for.html
+9) functions.html
+10) recursion.html
