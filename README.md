@@ -12,3 +12,8 @@ Repository made to remember and increasing knowledge in javascript.
 8) for.html
 9) functions.html
 10) recursion.html
+11) callback.html
+12) arrowFunction.html
+13) arrays.html
+14) object.html
+15) events.html

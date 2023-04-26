@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+        function phrase(string) {
+            alert(string)
+        }
+        setTimeout(phrase, 2000, "Paused 2 seconds")
+
+        /*setTimeout(() => {
+            alert("2 seconds passed")
+        }, 2000);*/
+    </script>
+</body>
+</html>

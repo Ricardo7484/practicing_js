@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        //Normally function (has local scope)
+        //function funcName() {}
+        function testNormally() {
+            alert("Normally function!")
+        }
+        testNormally()
+
+        //Arrow Function (has global scope and I can use this)
+        //() => {}
+        const testArrow = () => {
+            alert("Arrow Function!")
+        }
+        testArrow()
+
+        function person() {
+            this.age = 38
+            alert("Age now: " + this.age)
+            setTimeout(() => {
+                this.age++
+                alert("Age after 2 seconds: " + this.age)
+            }, 2000);
+        }
+        const a = new person()
+    </script>
+</body>
+</html>

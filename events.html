@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!--<button type="button" onclick="alertMe()">Click here!</button>  //Basic use of the basic-->
+    <button id="btn" type="button">Click here!</button>
+    <script>
+        /*function alertMe() {    //Basic use of the basic
+            alert("Hi, this is my first event.")
+        }*/
+        let btn = document.getElementById('btn')
+        btn.addEventListener('click', alertMe)
+        
+        function alertMe() {
+            alert("Hi, this is my first event.")
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log("Hello")
+        })
+    </script>
+</body>
+</html>

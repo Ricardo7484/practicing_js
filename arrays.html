@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let arr = []    //Some codes still use let nameArray = new Array(), but they are in disuse
+        //arr[0] = "Ricardo"
+        //arr[1] = "Fulano"
+        //arr[2] = "Beltrano"
+        //arr[3] = "Ciclano"
+        arr = ["Ricardo", "Fulano", "Beltrano", "Ciclano"]
+
+        console.log(arr[0] + " - " + arr[1] + " - " + arr[2] + " - " + arr[3])
+
+        //Reading the array
+        for(let i = 0; i < arr.length; i++){
+            console.log(arr[i])
+        }
+        //Reading the array
+        arr.forEach((val, index) => {
+            console.log(val)
+        })
+        //Changing array content
+        arr.forEach((val, index) => {
+            if (val == "Fulano") {
+                arr[index] = "Fulano1"
+            }
+        })
+
+        //Insert an element at the beginning of the array
+        arr.unshift("First")
+
+        //Insert an element at the end of the array
+        arr.push("Last")
+
+        //Removes the first element from the array
+        arr.shift()
+
+        //Removes the last element from the array
+        arr.pop()
+
+        console.log("Array : " + arr)
+
+        //Makes a copy of the original array, separating what we want to delete
+        console.log("Array Sli: " + arr.slice(2))
+
+        //Adds elements at specific positions
+        arr.splice(2, 0, "Element")
+        console.log("Array Spl Add: " + arr)
+
+        //Removes elements at specific positions
+        arr.splice(0, 1)
+        console.log("Array Spl Rem: " + arr)
+
+        //Reverses the order of array elements
+        console.log("Array Rev: " + arr.reverse())
+
+        let arr2 = ["Java", "PHP", "C", "J1S", "JS"]
+        let merge = arr.concat(arr2)
+
+        console.log("Array merge: " + merge)
+
+        //Checks if there is occurrence of specific element in array
+        console.log("There is: " + merge.includes("JS"))
+
+        //Shows the position the element is in the array
+        console.log(merge.indexOf("JS"))
+
+    </script>
+</body>
+</html>
