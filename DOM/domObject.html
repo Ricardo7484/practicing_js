@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p class="text">Hello DOM</p>
+    <input type="text" name="email">
+    <script>
+        //const p = document.getElementById('text')
+        //console.log(p[0].textContent)
+        //const p = document.getElementsByTagName('p')
+        const p = document.getElementsByClassName('text')
+        console.log(p[0].textContent)
+        const email = document.getElementsByName('email')
+        console.log(email)
+        console.log(email[0])
+    </script>
+</body>
+</html>

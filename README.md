@@ -17,3 +17,6 @@ Repository made to remember and increasing knowledge in javascript.
 13) arrays.html
 14) object.html
 15) events.html
+16) DOM
+    domObject.html
+    domElement.html
