@@ -20,3 +20,5 @@ Repository made to remember and increasing knowledge in javascript.
 16) DOM
     domObject.html
     domElement.html
+    domEvents.html
+    domImc.html

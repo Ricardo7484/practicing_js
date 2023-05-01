@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <input type="text" id="height" name="height" placeholder="Height in m">
+    <input type="text" id="weight" name="weight" placeholder="Weight in Kg">
+    <button type="button" onclick="calcImc()">Calc</button>
+    <div id="result"></div>
+
+    <script>
+        function calcImc() {
+            const weight = parseFloat(document.getElementById('weight').value)
+            const height = parseFloat(document.getElementById('height').value)
+            const imc = (weight / (height * height))
+            const result = document.getElementById('result')
+
+            if ( imc < 17 ) {
+                //alert("Very underweight.");
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Very underweight.`
+            } else if ( imc >= 17 && imc <= 18.49) {
+                //alert(imc + " - Under weight.");
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Under weight.`
+            } else if ( imc >= 18,5 && imc < 24.99) {
+                //alert(imc + " - Normal wieght.");
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Normal wieght.`
+            } else if ( imc >= 25 && imc < 29.99) {
+                //alert(imc + " - Overweight.");
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Overweight.`
+            } else if ( imc >= 30 && imc < 34.99) {
+                //alert(imc + " - Obesity I");
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity I.`
+            } else if ( imc >= 35 && imc < 39.99) {
+                //alert(imc + " - Obesity II (severe)")
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity II (severe).`
+            } else if (imc >= 40){
+                //alert(imc + " - Obesity III (morbid)")
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity III (morbid).`
+            }
+        }
+    </script>
+</body>
+</html>
