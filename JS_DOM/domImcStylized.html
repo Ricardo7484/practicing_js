@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <input type="text" id="height" name="height" placeholder="Height in m">
+    <input type="text" id="weight" name="weight" placeholder="Weight in Kg">
+    <button type="button" id="btnCalc" onclick="calcImc()">Calc</button>
+    <div id="result"></div>
+
+    <script>
+        const weight = document.getElementById('weight')
+        const height = document.getElementById('height')
+        const result = document.getElementById('result')
+        const btn = document.getElementById('btnCalc')
+        
+        height.style.display = 'block'
+        height.style.width = '40%'
+        height.style.padding = '.4rem .75rem'
+        height.style.marginTop = '1rem'
+        height.style.fontSize = '1rem'
+        height.style.color = '#494949'
+        height.style.borderRadius = '.25rem'
+        height.style.border = '1px solid #cecece'
+        
+        weight.style.display = 'block'
+        weight.style.width = '40%'
+        weight.style.padding = '.4rem .75rem'
+        weight.style.marginTop = '1rem'
+        weight.style.fontSize = '1rem'
+        weight.style.color = '#494949'
+        weight.style.borderRadius = '.25rem'
+        weight.style.border = '1px solid #cecece'
+
+        btn.style.display = 'inline-block'
+        btn.style.fontWeight = '400'
+        btn.style.border = '1px solid transparent'
+        btn.style.width = '20%'
+        btn.style.padding = '.4rem .75rem'
+        btn.style.marginTop = '1rem'
+        btn.style.fontSize = '1rem'
+        btn.style.borderRadius = '.25rem'
+        btn.style.background = '#0062cc'
+        btn.style.color = '#ffffff'
+
+        function calcImc() {
+            numWeight = parseFloat(weight.value)
+            numHeight = parseFloat(height.value)
+            const imc = (numWeight / (numHeight * numHeight))
+
+            if ( imc < 17 ) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Very underweight.`
+            } else if ( imc >= 17 && imc <= 18.49) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Under weight.`
+            } else if ( imc >= 18,5 && imc < 24.99) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Normal wieght.`
+            } else if ( imc >= 25 && imc < 29.99) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Overweight.`
+            } else if ( imc >= 30 && imc < 34.99) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity I.`
+            } else if ( imc >= 35 && imc < 39.99) {
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity II (severe).`
+            } else if (imc >= 40){
+                result.innerHTML = `<p>Result: ${imc.toFixed(2)} => Obesity III (morbid).`
+            }
+        }
+    </script>
+</body>
+</html>
