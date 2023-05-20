@@ -32,6 +32,10 @@ In this repository, I intend to store my journey during a revision of the Javasc
 	- 2.6. domImcStylized.html
 - 3 . **JS_OO**
 	- 3.1. Person.js
+	- 3.2. Posts.js
+	- 3.3. Athlete.js (encapsulation)
+	- 3.4. Polygon.js (inheritance)
+	- 3.5. Aninal.js (polymorphism)
 
 ### Contact:
 ---
