@@ -36,6 +36,10 @@ In this repository, I intend to store my journey during a revision of the Javasc
 	- 3.3. Athlete.js (encapsulation)
 	- 3.4. Polygon.js (inheritance)
 	- 3.5. Aninal.js (polymorphism)
+- 4 . **JS_Ajax**
+	- 4.1. app.js
+	- 4.2. fetch_api.js
+	- 4.3. axios.js
 
 ### Contact:
 ---
