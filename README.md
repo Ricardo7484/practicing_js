@@ -40,6 +40,7 @@ In this repository, I intend to store my journey during a revision of the Javasc
 	- 4.1. app.js
 	- 4.2. fetch_api.js
 	- 4.3. axios.js
+	- 4.4. index.js (request http)
 
 ### Contact:
 ---
