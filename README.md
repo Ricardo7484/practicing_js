@@ -41,6 +41,8 @@ In this repository, I intend to store my journey during a revision of the Javasc
 	- 4.2. fetch_api.js
 	- 4.3. axios.js
 	- 4.4. index.js (request http)
+- 5 . **JS_DataStructure**
+	- 5.1. arrayInsert.js
 
 ### Contact:
 ---
