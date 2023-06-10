@@ -47,6 +47,8 @@ In this repository, I intend to store my journey during a revision of the Javasc
 	- 5.3. stack.js
 	- 5.4. queue.js
 	- 5.5. preferentialQueue.js
+- 6 . **JS_advanced**
+	- 6.1. Shopping Mall Control Design
 
 ### Contact:
 ---
